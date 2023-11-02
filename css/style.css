@@ -73,6 +73,9 @@ main{
 
 .generi li{
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .generi a{
@@ -86,6 +89,11 @@ li{
 
 a{
     text-decoration: none;
+}
+
+#line{
+    width: 30px;
+    border: 1px solid #95dc2d;
 }
 
 /* stili playlist */
@@ -119,8 +127,8 @@ a{
 }
 
 .round img{
-   width: 200px;
-   height: 200px;
+   max-width: 150px;
+   max-height: 150px;
    border-radius: 50%;
    object-fit: cover;
 }
@@ -138,13 +146,44 @@ a{
     display: none;
 }
 
- .playlist .img:hover{
+ .playlist .img:hover img{
     opacity: 0.5;
 }
 
  .img:hover .fa-circle-play{
     display: block;
  }
+
+ a:hover{
+    color: white;
+ }
+
+ /* tablet version */
+
+ @media all and (max-width:878px){
+
+    .playlist .col{
+        width: calc((100% / 4) - 20px);
+        margin-bottom: 15px ;
+    }
+
+ }
+
+ /* mobile version */
+
+ @media all and (max-width:639px){
+
+    .playlist .col{
+        width: calc((100% / 2) - 20px);
+        margin-bottom: 15px ;
+    }
+
+ }
+
+
+
+
+
 
 /* stili footer */
 
