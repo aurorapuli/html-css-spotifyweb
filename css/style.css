@@ -18,7 +18,7 @@ main{
 
 /* stili navbar */
 #navbar{
-    width: 250px;
+    min-width: 250px;
     height: 100%;
     background-color: black;
 }
@@ -47,10 +47,45 @@ main{
     padding: 10px 40px;
     border: 1px solid white;
     border-radius: 25px;
-    background-color: #080b12;
-    
+    background-color: #080b12;   
 }
 
+.container{
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* stili generi */
+.generi{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.generi ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.generi li{
+    margin-bottom: 20px;
+}
+
+.generi a{
+    margin: 0 10px;
+    color: #838589;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 
 /* stili footer */
