@@ -8,3 +8,54 @@
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* stili main */
+
+main{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+/* stili navbar */
+#navbar{
+    width: 250px;
+    height: 100%;
+    background-color: black;
+}
+
+/* stili main content */
+
+#main-content{
+    flex-grow: 1;
+    color: white;
+    background-color: #141922;
+}
+
+#upgrade{
+    height: 100px;
+    position: fixed;
+    z-index: 500;
+    width:calc(100vw - 250px);
+    background-color: #080b12;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+#upgrade input{
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: #080b12;
+    
+}
+
+
+
+/* stili footer */
+
+footer{
+    height: 100px;
+    background-color: #282828;
+}
