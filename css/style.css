@@ -29,6 +29,7 @@ main{
     flex-grow: 1;
     color: white;
     background-color: #141922;
+    overflow-y: auto;
 }
 
 #upgrade{
@@ -87,6 +88,63 @@ a{
     text-decoration: none;
 }
 
+/* stili playlist */
+
+.img img{
+    width: 100%
+}
+
+.playlist h2{
+    margin-bottom: 10px;
+}
+
+.playlist .row{
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.playlist .col{
+    width: calc((100% / 6) - 20px);
+    margin: 0 10px;
+    text-align: center;
+}
+
+.playlist h3{
+    margin: 10px 0;
+}
+
+.subtitle{
+    color: #838589;
+}
+
+.round img{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.img{
+    position: relative;
+}
+
+.fa-circle-play{
+    font-size: 66px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-33px , -33px);
+    display: none;
+}
+
+ .playlist .img:hover{
+    opacity: 0.5;
+}
+
+ .img:hover .fa-circle-play{
+    display: block;
+ }
 
 /* stili footer */
 
