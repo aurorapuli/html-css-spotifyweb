@@ -247,7 +247,7 @@ a{
     position: relative;
 }
 
-.fa-circle-play{
+.playlist .fa-circle-play{
     font-size: 66px;
     position: absolute;
     left: 50%;
@@ -300,4 +300,113 @@ a{
 footer{
     height: 100px;
     background-color: #282828;
+    color: white;
+}
+
+.container-footer{
+    padding: 0 10px;
+}
+
+.container-footer .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+
+.container-footer .col{
+    width: 150px;
+}
+
+#like-song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brano-play{
+    display: flex;
+}
+
+.brano-play .img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.text-brano{
+    font-size: 13px;
+}
+
+/* stili col end */
+
+.col-end{
+    display: flex;
+    align-items: center;
+}
+
+#volume{
+    display: flex;
+}
+
+#volume .fa-solid{
+    padding: 0 5px;
+}
+
+ .col-end .barra-play{
+    width: 90%;
+    height: 2px;
+    border: 2px solid grey;
+}
+
+/* stili col-middle */
+
+.col-middle{
+    text-align: center;
+    min-width: 30%;
+}
+
+ .col-middle .barra-play{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .col-middle .grey{
+    height: 2px;
+    background-color:  gray;
+    width: 70%;
+    display: flex;
+    align-items: center;
+
+}
+
+.col-middle .light-grey{
+    background-color: yellow;
+    height: 2px;
+}
+
+.col-middle span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#song-playback{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#song-playback .fa-solid{
+    font-size: 20px;
+    padding: 0 10px;
+
+}
+
+#song-playback .fa-regular{
+    font-size: 40px;
 }
