@@ -19,9 +19,111 @@ main{
 /* stili navbar */
 #navbar{
     min-width: 250px;
-    height: 100%;
+    max-height: calc(100vh - 100px);
     background-color: black;
+    color: white;
 }
+
+.container-nav{
+    padding: 15px 15px;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+
+#logo-big{
+    width: 150px;
+}
+
+.container-nav li{
+    padding: 10px 0;
+}
+
+.container-nav .fa-solid{
+    font-size: 20px;
+    color: #838589;
+    margin-right: 7px;
+}
+
+#fa-plus{
+    font-size: 20px;
+    color: black;
+    padding: 7px;
+    background-color: #838589;
+}
+
+.fa-user{
+    font-size: 15px;
+    color: white;
+    background-color: #838589;
+    padding: 5px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.fa-circle-down{
+    margin-right: 10px;
+}
+
+#profile{
+    margin-top: 10px;
+    padding-top: 15px;
+    width: 100%;
+    border-top: 1px solid #838589;
+    display: flex;
+}
+
+#logo-small{
+    width: 30px;
+    display: none;
+}
+
+@media all and (max-width:552px){
+    #navbar{
+        min-width: 65px;
+    }
+
+    .container-nav{
+        text-align: center;
+    }
+
+
+    #logo-small{
+        display: block;
+    }
+
+    #logo-big{
+        display: none;
+    }
+
+    #profile{
+        border: none;
+        justify-content: center;
+    }
+
+    .container-nav a,h3,h4,span{
+        display: none;
+    }
+
+    .container-nav .fa-solid, .fa-regular{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* stili main content */
 
@@ -54,7 +156,15 @@ main{
 .container{
     width: 95%;
     margin: 0 auto;
-    height: 100%;
+}
+
+/* small mobile version */
+
+@media all and (max-width:552px){
+    #upgrade{
+        width:calc(100vw - 65px);
+
+    }
 }
 
 /* stili generi */
@@ -80,7 +190,6 @@ main{
 
 .generi a{
     margin: 0 10px;
-    color: #838589;
 }
 
 li{
@@ -89,6 +198,7 @@ li{
 
 a{
     text-decoration: none;
+    color: #838589;
 }
 
 #line{
