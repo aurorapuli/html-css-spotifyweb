@@ -29,12 +29,16 @@ main{
     height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-
 
 #logo-big{
     width: 150px;
+}
+
+#my-playlist{
+    height: 350px;
+    overflow-y: auto;
 }
 
 .container-nav li{
@@ -103,9 +107,22 @@ main{
         justify-content: center;
     }
 
-    .container-nav a,h3,h4,span{
+    .container-nav a{ 
         display: none;
     }
+
+    .container-nav h3{ 
+        display: none;
+    }
+
+    .container-nav h4{ 
+        display: none;
+    }
+
+    .container-nav span{ 
+        display: none;
+    }
+    
 
     .container-nav .fa-solid, .fa-regular{
         display: block;
@@ -144,6 +161,7 @@ main{
     align-items: center;
     justify-content: flex-end;
     padding-right: 10px;
+    opacity: 0.9;
 }
 #upgrade input{
     color: white;
@@ -151,6 +169,10 @@ main{
     border: 1px solid white;
     border-radius: 25px;
     background-color: #080b12;   
+}
+
+#upgrade input:hover{
+    font-size: 15px;
 }
 
 .container{
@@ -317,7 +339,7 @@ footer{
 
 
 .container-footer .col{
-    width: 150px;
+    width: 200px;
 }
 
 #like-song{
@@ -356,8 +378,15 @@ footer{
 
  .col-end .barra-play{
     width: 90%;
-    height: 2px;
-    border: 2px solid grey;
+}
+
+.col-end span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
 }
 
 /* stili col-middle */
@@ -367,24 +396,29 @@ footer{
     min-width: 30%;
 }
 
- .col-middle .barra-play{
+.col-middle .barra-play{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
- .col-middle .grey{
-    height: 2px;
-    background-color:  gray;
+.grey{
+    height: 4px;
+    background-color: #403e3e;
     width: 70%;
     display: flex;
     align-items: center;
 
 }
 
-.col-middle .light-grey{
-    background-color: yellow;
+.light-grey{
+    background-color: #838589;
     height: 2px;
+    display: none;
+}
+
+.grey:hover .light-grey{
+    display: block;
 }
 
 .col-middle span{
@@ -393,7 +427,13 @@ footer{
     height: 8px;
     border-radius: 50%;
     background-color: white;
+    display: none;
 }
+
+.grey:hover span{
+    display: block;
+}
+
 
 #song-playback{
     padding-bottom: 15px;
@@ -401,12 +441,37 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
 #song-playback .fa-solid{
     font-size: 20px;
     padding: 0 10px;
-
 }
+
 
 #song-playback .fa-regular{
     font-size: 40px;
+    padding: 0 20px;
+}
+
+#song-playback .fa-regular:hover{
+    font-size: 50px;
+}
+
+
+
+@media all and (max-width:639px){
+
+    .container-footer .col{
+        width: 150px;
+    }
+
+}
+
+@media all and (max-width:552px){
+
+    .brano-play .img{
+        display: none;
+    }
+
+
 }
